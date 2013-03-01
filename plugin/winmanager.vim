@@ -599,11 +599,6 @@ function! <SID>RepairAltRegister()
 		exe 'silent! bwipeout '.tmpBufNum
 		let &l:bufhidden = _hidden
 		call WinManagerResumeAUs()
-
-		let &l:bufhidden = _hidden
-		let &report=oldRep
-		let &sc = save_sc
-
 		return
 	end
 
